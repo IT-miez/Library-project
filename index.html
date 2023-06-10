@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="index.js" defer></script>
+    <title>Simple Personal Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <h1 class="top-bar-text">library</h1>
+        </div>
+
+        <div class="bookadd">
+            <button id="openModal">Add book +</button>
+        </div>
+
+        <div class="main-content">
+            <div class="bookshelf" id="bookshelf">
+
+            </div>
+        </div>
+        <div id="modal">
+            <div class="modal-form">
+
+                <div class="modal-form-background">
+                    <h4>Test</h4>
+                    <form id="myForm" action="" class="form-flex">
+                        <input class="modal-text" type="text" name="bookname" placeholder="Book name" required>
+                        <input class="modal-text" type="text" name="author" placeholder="Author" required>
+                        <input class="modal-text" type="number" name="pages" placeholder="No. of pages" required>
+                        <input class="modal-text" type="button" name="submit-data" value="Submit" id="submitBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

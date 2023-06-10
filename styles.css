@@ -1,0 +1,128 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgrey;
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+
+    background-color: white;
+}
+
+.top-bar-text {
+    font-size: 36px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px
+}
+
+#openModal {
+    height: 40px;
+    width: 80px;
+    background-color: gray;
+    color: white;
+    border-radius: 10%;
+}
+
+#modal {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-form-background {
+    margin: auto;
+    font-size: 34px;
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: #fefefe;
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-text {
+    font-size: 30px;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bookshelf {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 500px));
+    grid-template-rows: repeat(3, minmax(100px, 500px));
+
+    grid-auto-rows: repeat(3, minmax(100px, 500px));
+    grid-auto-columns: repeat(3, minmax(100px, 500px));
+
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+    gap: 40px;
+
+    padding-top: 20px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    width: clamp(300px, 50%, 500px);
+    box-shadow: 0 0 3px rgb(55, 124, 124);
+
+    justify-self: center;
+}
+
+.book-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.book-subtext {
+    font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    .bookshelf {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 200px);
+    }
+}
