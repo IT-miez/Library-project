@@ -3,7 +3,7 @@ This project was made while doing The Odin Project. </br>
 The page is a simple library bookshelf page where you can add books, which include data of a book - book name, author name and page count - in a card format. **Grid** and **flexbox** were used while structuring the site. The book cards use **grid** to automatically fill space when for example zooming the site. **Flex** was used to center content easily.</br><br>
 
 ## Live site
-GitHub Pages site: 
+GitHub Pages site: https://it-miez.github.io/Library-project/
 </br></br>
 
 ## Technologies used
